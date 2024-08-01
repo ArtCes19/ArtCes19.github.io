@@ -14,7 +14,7 @@
 
 <body>
     <header class="col-12 bg-primary text-center">
-        <h1>Formulario envianos tu reseña</h1>
+        <h1>Almacenar datos con unos de JSON</h1>
     </header>
     <nav class="col-12 bg-secondary text-center">
         <ul>
@@ -23,12 +23,28 @@
             <li ><a href="formulario.html">formulario</a></li>
         </ul>
     </nav>
-    <section>
-        <br><br>
-        <h2>Gracias por la información enviada...</h2>
-        <a href="index1.html">
-        <img src="img/gracias.png" alt="Gracias" width="100%" height="100%"></a>
-    </section>
+    <div class="container">
+        <h2 class="text-center">AJAX</h2>
+        <p class="text-center">Asynchonouns JavaScript And XML</p>
+
+        <p>Muestra datos almacenados en JSON</p>
+        <div id="contenido"></div>
+        <p>FORMULARIO</p>
+        <label>Nombre</label><br>
+        <input type="text"id="formNombre"disabled>
+        <br>
+        <label>Edad</label><br>
+        <input type="text"id="formEdad"disabled>
+        <br>
+        <label>Direccion</label><br>
+        <input type="text"id="formDireccion"disabled><br>
+        <label>Telefono</label><br>
+        <input type="text"id="formTelefono"disabled>
+        
+        <br>
+
+        <button onclick="funCargarDatos()" class=" btn btn-primary">Cargar Datos</button>
+    </div>
     <footer class="col-12 bg-primary text-center">
         <h1>Fin</h1>
         <i class="fa-brands fa-instagram"></i>
@@ -36,7 +52,7 @@
         <i class="fa-brands fa-apple"></i>
         <i class="fa-brands fa-github"></i>
     </footer>
-    
+    <script src="js/main1.js"></script>
 </body>
 
 </html>

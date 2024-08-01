@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="https://bootswatch.com/5/solar/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
-    
 </head>
 
 <body>
     <header class="col-12 bg-primary text-center">
-        <h1>Formulario envianos tu reseña</h1>
+        <h1>Carga y Elimina con JSON</h1>
     </header>
     <nav class="col-12 bg-secondary text-center">
         <ul>
@@ -23,12 +22,29 @@
             <li ><a href="formulario.html">formulario</a></li>
         </ul>
     </nav>
-    <section>
-        <br><br>
-        <h2>Gracias por la información enviada...</h2>
-        <a href="index1.html">
-        <img src="img/gracias.png" alt="Gracias" width="100%" height="100%"></a>
-    </section>
+    <div class="container">
+        <h2 class="text-center">AJAX-Jquery</h2>
+        <p class="text-center">Libreria Jquery</p>
+
+        <p>Muestra datos almacenados en JSON</p>
+        <div id="contenido"></div>
+        <p>FORMULARIO</p>
+        <label>Nombre</label><br>
+        <input type="text"id="formNombre"disabled>
+        <br>
+        <label>Edad</label><br>
+        <input type="text"id="formEdad"disabled>
+        <br>
+        <label>Direccion</label><br>
+        <input type="text"id="formDireccion"disabled><br>
+        <label>Telefono</label><br>
+        <input type="text"id="formTelefono"disabled>
+        
+        <br>
+
+        <button id="cargar" class= "btn btn-primary">Cargar Datos</button>
+        <button id="elimina" class="btn btn-primary">Eliminar</button>
+    </div>
     <footer class="col-12 bg-primary text-center">
         <h1>Fin</h1>
         <i class="fa-brands fa-instagram"></i>
@@ -36,6 +52,8 @@
         <i class="fa-brands fa-apple"></i>
         <i class="fa-brands fa-github"></i>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main2.js"></script>
     
 </body>
 
